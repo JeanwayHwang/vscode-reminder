@@ -1,0 +1,57 @@
+{
+	"name": "vscode-reminder",
+	"displayName": "vscode-reminder",
+	"description": "A vscode reminder extension",
+	"version": "0.0.1",
+	"publisher" : "ryanism37",
+	"engines": {
+		"vscode": "^1.36.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [{
+			"command": "extension.reminder",
+			"title": "reminder"
+		}],
+		"configuration": {
+			"type": "object",
+			"title": "休息提示插件配置项",
+			"properties": {
+				"reminder.reminderIntervalMin": {
+						"type": "number",
+						"default": 60,
+						"description": "提醒页的展示间隔（分钟）默认60分钟"
+				},
+				"reminder.reminderImg": {
+					"type": "string",
+					"default": "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1852003091,1161907000&fm=26&gp=0.jpg",
+					"description": "提醒页大图"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.6",
+		"@types/node": "^10.12.21",
+		"@types/vscode": "^1.36.0",
+		"glob": "^7.1.4",
+		"mocha": "^6.1.4",
+		"typescript": "^3.3.1",
+		"tslint": "^5.12.1",
+		"vscode-test": "^1.0.2"
+	}
+}

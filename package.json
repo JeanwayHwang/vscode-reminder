@@ -21,12 +21,12 @@
 		}],
 		"configuration": {
 			"type": "object",
-			"title": "休息提示插件配置项",
+			"title": "休息提醒配置项",
 			"properties": {
 				"reminder.reminderIntervalMin": {
 						"type": "number",
 						"default": 60,
-						"description": "提醒页的展示间隔（分钟）默认60分钟"
+						"description": "提醒展示间隔（分钟）默认60分钟"
 				},
 				"reminder.reminderImg": {
 					"type": "string",

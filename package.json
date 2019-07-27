@@ -2,7 +2,7 @@
 	"name": "vscode-reminder",
 	"displayName": "vscode-reminder",
 	"description": "A vscode reminder extension",
-	"version": "1.0.1",
+	"version": "1.0.4",
 	"publisher" : "JeanwayHwang",
 	"icon": "asset/logo.png",
 	"engines": {
